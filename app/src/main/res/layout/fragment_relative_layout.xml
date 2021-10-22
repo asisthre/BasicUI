@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textViewChildOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="#000000"
+        android:text="Relative Layout!"
+        android:textColor="#6BDF21"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewChildTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewChildOne"
+        android:layout_marginStart="16dp"
+        android:text="Enter Name"
+        android:textColor="#304FFE"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/textViewChildThree"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewChildTwo"
+        android:layout_marginStart="16dp"
+        android:inputType="textPersonName"
+        />
+    <TextView
+        android:id="@+id/textViewChildFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewChildThree"
+        android:layout_marginStart="16dp"
+        android:text="Enter Username"
+        android:textColor="#304FFE"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/textViewChildFive"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewChildFour"
+        android:layout_marginStart="16dp"
+        android:inputType="textPersonName"
+        />
+    <TextView
+        android:id="@+id/textViewChildSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewChildFive"
+        android:layout_marginStart="16dp"
+        android:text="Enter Password"
+        android:textColor="#304FFE"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/textViewChildSeven"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewChildSix"
+        android:layout_marginStart="16dp"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/textViewChildEight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewChildSeven"
+        android:layout_marginStart="16dp"
+        android:text="Retype Password "
+        android:textColor="#304FFE"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/textViewChildNine"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewChildEight"
+        android:layout_marginStart="16dp"
+        android:inputType="textPassword"
+        />
+    <TextView
+        android:id="@+id/textViewChildTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewChildNine"
+        android:layout_marginStart="16dp"
+        android:text="Gender"
+        android:textColor="#304FFE"
+        android:textSize="16sp" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textViewChildTen"
+        android:layout_marginStart="40dp"
+        >
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Male"/>
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Female"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewChildTen"
+        android:layout_marginTop="65dp"
+        android:layout_marginStart="140dp"
+        android:text="Register" />
+
+
+</RelativeLayout>
